@@ -1,4 +1,4 @@
-package com.tfakos.apiversining.v1.resources;
+package com.tfakos.apiversioning.v1.resources;
 
 public class AccountsResourceImplV1 implements AccountsResourceV1 {
 

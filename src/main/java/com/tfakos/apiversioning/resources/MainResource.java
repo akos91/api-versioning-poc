@@ -1,11 +1,11 @@
-package com.tfakos.apiversining.resources;
+package com.tfakos.apiversioning.resources;
 
 import javax.naming.directory.InvalidAttributesException;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 
-import com.tfakos.apiversining.v1.resources.AccountsResourceImplV1;
-import com.tfakos.apiversining.v2.resources.AccountsResourceImplV2;
+import com.tfakos.apiversioning.v1.resources.AccountsResourceImplV1;
+import com.tfakos.apiversioning.v2.resources.AccountsResourceImplV2;
 
 @Path("/main")
 public class MainResource {

@@ -1,4 +1,4 @@
-package com.tfakos.apiversining.v2.resources;
+package com.tfakos.apiversioning.v2.resources;
 
 class AccountResponse {
 

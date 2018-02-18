@@ -1,4 +1,4 @@
-package com.tfakos.apiversining.resources;
+package com.tfakos.apiversioning.resources;
 
 public interface MainAccountResource {
 
