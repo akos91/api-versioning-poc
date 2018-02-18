@@ -25,4 +25,9 @@ public class AccountsResourceImplV2 implements AccountsResourceV2 {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Override
+	public String v2Ping() {
+		return "V2 PING";
+	}
 }
