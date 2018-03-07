@@ -16,7 +16,7 @@ import com.tfakos.mediatype.beans.AccountResponseV1;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("v1/accounts")
+@Path("uri/v1/accounts")
 public class AccountsResourceV1 {
 
     @GET
@@ -46,7 +46,7 @@ public class AccountsResourceV1 {
 	}
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     public AccountResponseV1 updateAccount(@PathParam("id") String accountId, AccountRequestV1 account) {
         // TODO Auto-generated method stub
         return null;

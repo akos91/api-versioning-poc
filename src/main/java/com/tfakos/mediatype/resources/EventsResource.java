@@ -18,7 +18,7 @@ import com.tfakos.mediatype.beans.EventResponseV2;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("events")
+@Path("mediatype/events")
 public class EventsResource {
 
     // new method introduced in V3
@@ -31,7 +31,7 @@ public class EventsResource {
 
     // response changed in V2, but no change in V3
     @GET
-    @Path("{id : [0-9]+")
+    @Path("{id : [0-9]+}")
     @Produces(EventResponseV2.MEDIA_TYPE_V2)
     public EventResponseV2 loadEvent(@PathParam("id") Long id) {
         // TODO Auto-generated method stub
@@ -39,7 +39,7 @@ public class EventsResource {
     }
 
     @GET
-    @Path("{id : [0-9]+")
+    @Path("{id : [0-9]+}")
     @Produces(EventResponseV1.MEDIA_TYPE_V1)
     public EventResponseV1 loadEvent1(@PathParam("id") Long id) {
         // TODO Auto-generated method stub
@@ -61,7 +61,7 @@ public class EventsResource {
 
     // new 'startDateTime' request field introduced in V2, but no change in V3
     @PUT
-    @Path("{id : [0-9]+")
+    @Path("{id : [0-9]+}")
     @Consumes({ EventRequestV2.MEDIA_TYPE_V2, EventRequestV2.MEDIA_TYPE_V3 })
     @Produces(EventResponseV2.MEDIA_TYPE_V2)
     public EventResponseV2 updateEvent(@PathParam("id") String accountId, EventRequestV2 event) {
@@ -70,7 +70,7 @@ public class EventsResource {
     }
 
     @PUT
-    @Path("{id : [0-9]+")
+    @Path("{id : [0-9]+}")
     @Consumes(EventRequestV1.MEDIA_TYPE_V1)
     @Produces(EventResponseV1.MEDIA_TYPE_V1)
     public EventResponseV1 updateEventV1(@PathParam("id") String accountId, EventRequestV1 event) {

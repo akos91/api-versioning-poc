@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("v1/events")
+@Path("uri/v1/events")
 public class EventsResourceV1 {
 
     @GET
@@ -27,7 +27,7 @@ public class EventsResourceV1 {
 	}
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     public EventResponseV1 updateEvent(@PathParam("id") String accountId, EventRequestV1 event) {
         // TODO Auto-generated method stub
         return null;

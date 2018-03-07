@@ -16,7 +16,7 @@ import com.tfakos.mediatype.beans.EventResponseV2;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("v[2-9]./events")
+@Path("uri/v[2-9]./events")
 public class EventsResource {
 
     @GET
@@ -38,7 +38,7 @@ public class EventsResource {
 	}
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     public EventResponseV2 updateEvent(@PathParam("id") String accountId, EventRequestV2 event) {
         // TODO Auto-generated method stub
         return null;

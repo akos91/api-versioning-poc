@@ -43,7 +43,7 @@ public class AccountsResource {
 	}
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     public AccountResponse updateAccount(@PathParam("id") String accountId, AccountRequest account) {
         // TODO Auto-generated method stub
         return null;

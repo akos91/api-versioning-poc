@@ -17,12 +17,12 @@ import com.tfakos.mediatype.beans.AccountResponseV3;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("accounts")
+@Path("mediatype/accounts")
 public class AccountsResource {
 
 
     @GET
-    @Path("{id : [0-9]+")
+    @Path("{id : [0-9]+}")
     @Produces(AccountResponseV3.MEDIA_TYPE_V3)
     public AccountResponseV3 loadFullAccount(@PathParam("id") Long id) {
         // TODO Auto-generated method stub
@@ -61,7 +61,7 @@ public class AccountsResource {
     }
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     @Consumes(AccountRequestV3.MEDIA_TYPE)
     @Produces(AccountResponseV3.MEDIA_TYPE_V3)
     public AccountResponseV3 updateAccount(@PathParam("id") String accountId, AccountRequestV3 account) {
@@ -70,7 +70,7 @@ public class AccountsResource {
     }
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     @Consumes(AccountRequestV2.MEDIA_TYPE_V2)
     @Produces(AccountResponseV2.MEDIA_TYPE_V2)
     public AccountResponseV2 updateAccount(@PathParam("id") String accountId, AccountRequestV2 account) {

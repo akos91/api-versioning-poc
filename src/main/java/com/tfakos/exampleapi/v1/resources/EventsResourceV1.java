@@ -35,7 +35,7 @@ public class EventsResourceV1 {
 	}
 
     @PUT
-    @Path("{id : [-0-9][0-9]*")
+    @Path("{id : [-0-9][0-9]*}")
     public EventResponseV1 updateEvent(@PathParam("id") String accountId, EventRequestV1 event) {
         // TODO Auto-generated method stub
         return null;
