@@ -1,9 +1,19 @@
 package com.tfakos.apiversioning.v1.resources;
 
-class AccountResponse {
+import java.io.Serializable;
 
-	private Long id;
+class AccountResponse implements Serializable {
+
+    private static final long serialVersionUID = -6380529173157151957L;
+
+    private Long id;
 	private String name;
+
+    public static AccountResponse SAMPLE = new AccountResponse();
+    static {
+        SAMPLE.id = 1l;
+        SAMPLE.name = "accountResponseV1";
+    }
 
 	public Long getId() {
 		return id;

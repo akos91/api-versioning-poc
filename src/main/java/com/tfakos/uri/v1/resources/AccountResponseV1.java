@@ -2,7 +2,7 @@ package com.tfakos.uri.v1.resources;
 
 import java.io.Serializable;
 
-class AccountResponseV1 implements Serializable {
+public class AccountResponseV1 implements Serializable {
 
     private static final long serialVersionUID = -4102777078064020710L;
 
