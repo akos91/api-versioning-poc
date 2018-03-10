@@ -1,8 +1,17 @@
 package com.tfakos.uri.v1.resources;
 
-class AccountRequestV1 {
+import java.io.Serializable;
 
-	private String name;
+class AccountRequestV1 implements Serializable {
+
+    private static final long serialVersionUID = -2149273176850807875L;
+
+    private String name;
+
+    public static AccountRequestV1 SAMPLE = new AccountRequestV1();
+    static {
+        SAMPLE.name = "accountRequestV1";
+    }
 
 	public String getName() {
 		return name;

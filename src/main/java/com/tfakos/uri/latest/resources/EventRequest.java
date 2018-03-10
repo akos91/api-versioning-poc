@@ -1,6 +1,10 @@
 package com.tfakos.uri.latest.resources;
 
-class EventRequest {
+import java.io.Serializable;
+
+class EventRequest implements Serializable {
+
+    private static final long serialVersionUID = 7976176552149329565L;
 
     private String opponentA;
     private String opponentB;

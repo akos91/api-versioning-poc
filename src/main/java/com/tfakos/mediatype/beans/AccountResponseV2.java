@@ -9,6 +9,14 @@ public class AccountResponseV2 {
     private String firstName;
     private String lastName;
 
+    public static AccountResponseV2 SAMPLE = new AccountResponseV2();
+    static {
+        SAMPLE.id = 1l;
+        SAMPLE.userName = "accountResponseV2";
+        SAMPLE.firstName = "accResp";
+        SAMPLE.lastName = "V2";
+    }
+
 	public Long getId() {
 		return id;
 	}

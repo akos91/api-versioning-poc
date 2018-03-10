@@ -7,6 +7,12 @@ public class AccountResponseV1 {
 	private Long id;
 	private String name;
 
+    public static AccountResponseV1 SAMPLE = new AccountResponseV1();
+    static {
+        SAMPLE.id = 1l;
+        SAMPLE.name = "accountResponseV1";
+    }
+
 	public Long getId() {
 		return id;
 	}

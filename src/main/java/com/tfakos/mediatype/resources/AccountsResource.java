@@ -49,7 +49,7 @@ public class AccountsResource {
 
 
     @POST
-    @Consumes(AccountRequestV3.MEDIA_TYPE)
+    @Consumes(AccountRequestV3.MEDIA_TYPE_V3)
     public void createAccount(AccountRequestV3 account) {
 		// TODO Auto-generated method stub
 	}
@@ -62,7 +62,7 @@ public class AccountsResource {
 
     @PUT
     @Path("{id : [-0-9][0-9]*}")
-    @Consumes(AccountRequestV3.MEDIA_TYPE)
+    @Consumes(AccountRequestV3.MEDIA_TYPE_V3)
     @Produces(AccountResponseV3.MEDIA_TYPE_V3)
     public AccountResponseV3 updateAccount(@PathParam("id") String accountId, AccountRequestV3 account) {
         // TODO Auto-generated method stub

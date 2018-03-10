@@ -10,6 +10,15 @@ public class AccountResponseV3 {
     private String lastName;
 	private int age;
 
+    public static AccountResponseV3 SAMPLE = new AccountResponseV3();
+    static {
+        SAMPLE.id = 1l;
+        SAMPLE.userName = "accountResponseV3";
+        SAMPLE.firstName = "accResp";
+        SAMPLE.lastName = "V3";
+        SAMPLE.age = 22;
+    }
+
 	public Long getId() {
 		return id;
 	}

@@ -1,5 +1,6 @@
 package com.tfakos.uri.v2.resources;
 
+import java.util.Arrays;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -22,14 +23,14 @@ public class AccountsResourceV2 {
     @GET
     public List<AccountResponseV2> loadAll() {
         // TODO Auto-generated method stub
-        return null;
+        return Arrays.asList(AccountResponseV2.SAMPLE);
     }
 
     @GET
     @Path("{id : [-0-9][0-9]*}")
     public AccountResponseV2 loadFullAccount(@PathParam("id") Long id) {
         // TODO Auto-generated method stub
-        return null;
+        return AccountResponseV2.SAMPLE;
     }
 
     @GET

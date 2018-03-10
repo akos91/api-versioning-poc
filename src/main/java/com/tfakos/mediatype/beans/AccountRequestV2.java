@@ -8,6 +8,13 @@ public class AccountRequestV2 {
     private String firstName;
     private String lastName;
 
+    public static AccountRequestV2 SAMPLE = new AccountRequestV2();
+    static {
+        SAMPLE.userName = "accountRequestV2";
+        SAMPLE.firstName = "accReq";
+        SAMPLE.lastName = "V2";
+    }
+
 	public String getUserName() {
 		return userName;
 	}

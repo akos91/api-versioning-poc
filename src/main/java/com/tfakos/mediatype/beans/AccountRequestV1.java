@@ -6,6 +6,11 @@ public class AccountRequestV1 {
 
 	private String name;
 
+    public static AccountRequestV1 SAMPLE = new AccountRequestV1();
+    static {
+        SAMPLE.name = "accountRequestV1";
+    }
+
 	public String getName() {
 		return name;
 	}

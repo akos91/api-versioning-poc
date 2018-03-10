@@ -1,10 +1,21 @@
 package com.tfakos.uri.v2.resources;
 
-class AccountResponseV2 {
+import java.io.Serializable;
 
-	private Long id;
+class AccountResponseV2 implements Serializable {
+
+    private static final long serialVersionUID = 4558095182637599705L;
+
+    private Long id;
 	private String userName;
 	private int age;
+
+    public static AccountResponseV2 SAMPLE = new AccountResponseV2();
+    static {
+        SAMPLE.id = 1l;
+        SAMPLE.userName = "accountResponseV2";
+        SAMPLE.age = 22;
+    }
 
 	public Long getId() {
 		return id;

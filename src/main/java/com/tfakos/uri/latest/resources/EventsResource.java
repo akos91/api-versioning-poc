@@ -16,7 +16,7 @@ import com.tfakos.mediatype.beans.EventResponseV2;
 
 @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
 @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-@Path("uri/v[2-9]./events")
+@Path("uri/{version: v[2-9]}/events")
 public class EventsResource {
 
     @GET
